@@ -1,0 +1,17 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: "Space Mono", monospace;
+    /*font-family: "JetBrains Mono", system-ui;*/
+    /*font-family: "Poppins", sans-serif;*/
+    transition: 0.1s ease-out;
+    scroll-behavior: smooth;
+}
+body {
+    opacity: 1;
+    background: #000000;
+    max-width: 1170px;
+    margin: 0 auto;
+    position: relative;
+    overflow-x: hidden;
+}

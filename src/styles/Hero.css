@@ -1,0 +1,166 @@
+.Hero {
+    position: relative;
+    top: 0;
+    margin: 10% auto;
+    width: 100%;
+    max-width: 1170px;
+    padding: 50px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.Hero .Hero_body {
+    display: flex;
+    flex-direction: column;
+    opacity: 0;
+}
+
+.Hero .Hero_body .btns {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    margin: 20px 10px;
+}
+
+.Hero .Hero_body .btns .review_btn {
+    background: #209D70;
+    padding: 10px 15px;
+    font-weight: bold;
+    border-radius: 10px;
+    margin-bottom: 10px;
+}
+
+.Hero .Hero_body .btns .review_btn:hover {
+    background: none;
+    border: #209D70 2px solid;
+    color: #FFFFFF;
+}
+
+.Hero .Hero_body .btns .buy_btn {
+    background: none;
+    border: #209D70 2px solid;
+    padding: 10px 15px;
+    font-weight: bold;
+    color: #FFFFFF;
+    border-radius: 10px;
+}
+
+.Hero .Hero_body .btns .buy_btn:hover {
+    background: #209D70;
+    border: none;
+    color: black;
+}
+
+.Hero .Hero_img img{
+    width: 90%;
+    height: 90%;
+    object-fit: contain;
+    margin: 20px;
+}
+
+.Hero .Hero_img_pc {
+    display: none;
+}
+
+.Hero h2 {
+    color: #eee;
+    font-family: "Poppins", system-ui;
+    font-size: 20px;
+}
+
+.Hero h2 span {
+    color: red;
+}
+
+a{
+    text-decoration: none;
+    color: #FFFFFF;
+}
+
+@media (min-width: 768px) {
+    .Hero {
+        padding: 30px;
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: center;
+        margin: 5% auto;
+    }
+
+    .Hero .Hero_body {
+        display: flex;
+        flex-direction: column;
+        margin: 20px 20px 30px 20px;
+        width: 400px;
+    }
+
+    .Hero .Hero_img {
+        display: none;
+    }
+    .Hero h2 {
+        font-size: 30px;
+    }
+
+    .Hero .Hero_img_pc {
+        display: flex;
+    }
+
+    .Hero .Hero_body .btns {
+        display: flex;
+        flex-direction: row;
+        width: 100%;
+    }
+
+    .Hero .Hero_body .btns .review_btn {
+        background: #209D70;
+        border: none;
+        padding: 10px 15px;
+        font-weight: bold;
+        border-radius: 20px;
+        margin-bottom: 0;
+        margin-right: 20px;
+    }
+
+    .Hero .Hero_body .btns .buy_btn {
+        background: none;
+        border: #209D70 2px solid;
+        padding: 10px 15px;
+        font-weight: bold;
+        color: #FFFFFF;
+        border-radius: 20px;
+    }
+}
+
+@media (max-width: 845px) {
+    .Hero h2 {
+        font-size: 20px;
+    }
+
+    .Hero .Hero_body .btns {
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+    }
+
+    .Hero .Hero_body .btns .review_btn {
+        background: #209D70;
+        border: none;
+        padding: 10px 15px;
+        font-weight: bold;
+        border-radius: 20px;
+        margin-bottom: 10px;
+        width: 100%;
+    }
+
+    .Hero .Hero_body .btns .buy_btn {
+        background: none;
+        border: #209D70 2px solid;
+        padding: 10px 15px;
+        font-weight: bold;
+        color: #FFFFFF;
+        border-radius: 20px;
+        width: 100%;
+    }
+}
